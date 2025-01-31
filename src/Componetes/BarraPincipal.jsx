@@ -13,17 +13,19 @@ const BarraPincipal = () => {
 
     return (
         <motion.nav 
-            className="fixed w-full bg-[#3E40DD] drop shadow-lg overflow-hidden"
+            className="fixed w-full bg-gradient-to-r from-blue-600 to-purple-700 drop shadow-lg overflow-hidden"
             animate={{ height: menu ? 250 : 80 }} // Ajusta la altura dinámica
             transition={{ type: "spring", stiffness: 80 }}
-        >
+        >   
+       
             <div className="flex justify-between items-center px-12 h-[80px]">
                 {/* Logo */}
+                <Link to={'/'}>
                 <div className="Logo flex gap-2 items-center">
                     <img className="imgs" src={logo} alt="Logo" />
                     <p className="ServiText LogoType text-white TextShadow">Sarvi</p>
                 </div>
-
+                </Link>
                 {/* Botón de menú */}
                 <div onClick={negacion} className="Menu cursor-pointer">
                     <span>
@@ -46,9 +48,11 @@ const BarraPincipal = () => {
                             Regístrate
                         </button>
                     </Link>
+                    <Link to={'/Iniciar'}>
                     <button className="py-4 px-10 rounded-lg TextType text-[16px] shadow border-2 text-white hover:scale-[1.02] duration-100">
                         Inicia Sesión
                     </button>
+                    </Link>
                 </div>
             </div>
 

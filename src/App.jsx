@@ -4,6 +4,7 @@ import './App.css'
 
 import Registro from './pages/Registro'
 import Casa from './pages/Casa'
+import Iniciar from './pages/Iniciar'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
        <Routes>
         <Route path='/' element={<Casa/>}/>
         <Route path='/Registro' element={<Registro/>}/>
+        <Route path='/Iniciar' element={<Iniciar/>}/>
        </Routes>
        </BrowserRouter>
        

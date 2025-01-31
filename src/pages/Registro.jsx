@@ -1,6 +1,6 @@
 import React from 'react'
-import ImgPrin from "../IMG/registroo.png"
 import BarraPincipal from "../Componetes/BarraPincipal"
+import { Link } from 'react-router-dom'
 
 const Registro = () => {
   return (
@@ -9,7 +9,7 @@ const Registro = () => {
       <BarraPincipal />    
       <section className="flex SeccionRegistro ">
 
-         {/* seccion 1 */}
+         {/* seccion 1 IAMGEN */}
         <div className="w-[50%] Contenedor2 flex justify-center items-center">
           <img className='w-[80%]' src="https://doodleipsum.com/700/hand-drawn?i=61f58fe19bc9afd5ac16257d92c48d19" alt="Super Idea by Irene Falgueras" />
         </div>
@@ -17,16 +17,16 @@ const Registro = () => {
         <div className="w-[50%] Contenedor1 flex flex-col justify-center items-center">
           <div class="loginRegister">
             <div class="hader">
-              <span className='text-[#3E40DD]'>Join us today!</span>
-              <p>Sing up now to become a member.</p>
+              <span className='text-[#3E40DD]'>Unete a Nosotros hoy!</span>
+              <p>Regístrate ahora para convertirte en miembro.</p>
             </div>
             <form action="#">
-              <input type="text" placeholder="Enter Name" required="" />
-              <input type="email" placeholder="Enter Emaill" required="" />
-              <input type="password" placeholder="Choose A Password" required="" />
-              <input type="password" placeholder="Re-Enter Password" required="" />
-              <p className='bg-[#3E40DD] font-semibold text-xl flex justify-center py-2 rounded-lg' value="Signup">INICIAR</p>
-              <span> Already a member? <a className='text-[#3E40DD]' href="#">Login Here</a></span>
+              <input className='bg-white' type="text" placeholder="Nombre" required="" />
+              <input className='bg-white' type="password" placeholder="Contraseña" required="" />
+              <input className='bg-white' type="number" placeholder="Documento ID" required="" />
+              <input className='bg-white' type="date" required="" />
+              <p className='bg-[#3E40DD] font-semibold text-lg flex text-white justify-center py-2 rounded-lg' value="Signup">Registrarse</p>
+              <span> Ya eres Miembro? <Link to={'/Iniciar'}> <a className='text-[#3E40DD]'>Entra Aqui</a> </Link></span>
             </form>
           </div>
         </div>

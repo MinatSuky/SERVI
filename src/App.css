@@ -68,5 +68,9 @@
   flex-direction: column-reverse;
   height: 100%;
 }
+.SeccionIniciar{
+  flex-direction: column;
+  height: 100%;
+}
   
 }
