@@ -123,3 +123,9 @@ form span a {
 .SeccionIniciar{
   height: 100vh;
 }
+.SesionPagePrincipal{
+  height: 100vh;
+}
+.FontName{
+  font-family: "Archivo Black", serif;
+}

@@ -31,29 +31,29 @@ const Iniciar = () => {
                                     </label>
                                     <a href="#" className="text-sm text-blue-500 hover:underline mb-0.5 font-semibold opacity-85">Olvidaste la Contraseña?</a>
                                     <p className="text-gray-900 mt-4 font-semibold opacity-85">
-                                        Todavia no eres Miembro? 
+                                        Todavia no eres Miembro?
                                         <Link to={'/Registro'}>
-                                        <a href="#" className="text-sm font-semibold opacity-85  text-blue-500 hover:underline mt-4">Registrate</a>
+                                            <a href="#" className="text-sm font-semibold opacity-85  text-blue-500 hover:underline mt-4">Registrate</a>
                                         </Link>
                                     </p>
                                 </div>
-                                <button
-                                    type="submit"
-                                    className="bg-gradient-to-r from-indigo-400 to-purple-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150"
-                                >
-                                    Iniciar
-                                </button>
+                                <Link className="bg-gradient-to-r text-center from-indigo-400 to-purple-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150" to={'/PagePrincipal'}>
+                                    <button>
+                                        Iniciar
+                                    </button>
+                                </Link>
+
                             </form>
                         </div>
                     </div>
                 </div>
                 {/* Sección 2: Imagen */}
                 <div className="w-[50%] Contenedor2 flex justify-center items-center">
-                    <img 
-                        className="w-[80%]" 
-                        style={{ transform: "scaleX(-1)" }} 
-                        src="https://doodleipsum.com/700/hand-drawn?i=4a51d1ffc4e6797c11a5b4c7cc33cda6" 
-                        alt="Super Idea by Irene Falgueras" 
+                    <img
+                        className="w-[80%]"
+                        style={{ transform: "scaleX(-1)" }}
+                        src="https://doodleipsum.com/700/hand-drawn?i=4a51d1ffc4e6797c11a5b4c7cc33cda6"
+                        alt="Super Idea by Irene Falgueras"
                     />
                 </div>
             </section>
