@@ -22,6 +22,7 @@ const Registro = () => {
             </div>
             <form action="#">
               <input className='bg-white' type="text" placeholder="Nombre" required="" />
+              <input className='bg-white' type="text" placeholder="Gmail" required="" />
               <input className='bg-white' type="password" placeholder="Contraseña" required="" />
               <input className='bg-white' type="number" placeholder="Documento ID" required="" />
               <input className='bg-white' type="date" required="" />
