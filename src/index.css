@@ -37,6 +37,9 @@
 }
 .drop{
   box-shadow: 0px 4px 6px 0px #00000076;
+}
+.drop1{
+  box-shadow: 0px 4px 6px 0px #00000076;
   
 }
 .imgs{
@@ -128,4 +131,7 @@ form span a {
 }
 .FontName{
   font-family: "Archivo Black", serif;
+}
+.Invisibles{
+  display: none;
 }

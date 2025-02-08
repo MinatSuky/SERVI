@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import logo from "../IMG/BxSpa.png";
 import { Link } from 'react-router-dom';
-import MenuDesplegable from './MenuDesplegable';
+
 import { motion } from 'framer-motion';
+import MenuPagePeincipalCuenta from './MenuPagePrincipal';
 
 const BarraPagePrincipal = () => {
     const [menu, setMenu] = useState(false);
@@ -14,7 +15,7 @@ const BarraPagePrincipal = () => {
     return (
         <motion.nav
             className="fixed w-full bg-gradient-to-r from-blue-600 to-purple-700 drop shadow-lg overflow-hidden"
-            animate={{ height: menu ? 250 : 80 }} // Ajusta la altura dinámica
+            animate={{ height: menu ? 480 : 80 }} // Ajusta la altura dinámica
             transition={{ type: "spring", stiffness: 80 }}
         >
 
@@ -44,7 +45,7 @@ const BarraPagePrincipal = () => {
                 {/* Botones de Registro e Inicio */}
                 <div className="Botones flex justify-center items-center gap-3 cursor-default">
                     <div className='w-[10%] '>
-                        <img className='w-full rounded-full shadow-xl drop' src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="" />
+                        <img className='w-full rounded-full shadow-xl  cursor-pointer drop' src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="" />
                     </div>
                     <p className='font-semibold text-xl TextShadow FontName'>Sebastian G.</p>
                 </div>
@@ -58,7 +59,7 @@ const BarraPagePrincipal = () => {
                     exit={{ opacity: -20, y: -20 }}
                     transition={{ duration: 0.3 }}
                 >
-                    <MenuDesplegable />
+                    <MenuPagePeincipalCuenta/>
                 </motion.div>
             )}
         </motion.nav>
