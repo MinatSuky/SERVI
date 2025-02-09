@@ -102,5 +102,13 @@
 .Invisibles{
   display: block;
 }
-  
+.ButonSesionCicla{
+  scale: 0.70;
+}
+.EDITAR{
+  margin: 0;
+}
+.Contenedor2{
+  display: none;
+}
 }

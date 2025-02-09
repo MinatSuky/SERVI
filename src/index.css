@@ -73,6 +73,9 @@ transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 .boton1{
   font-size: clamp(14px, 2vw, 20px );
 }
+.NameCiclas{
+  font-size: clamp(15px, 2.5vw, 40px );
+}
 .no-wrap {
   white-space: nowrap;
 }
@@ -134,4 +137,7 @@ form span a {
 }
 .Invisibles{
   display: none;
+}
+.shadoww{
+  box-shadow: -4px 4px 9px 0px #d5d5d5 inset;
 }
