@@ -14,7 +14,7 @@ const BarraPagePrincipal = () => {
 
     return (
         <motion.nav
-            className="fixed w-full bg-gradient-to-r from-blue-600 to-purple-700 drop shadow-lg overflow-hidden"
+            className="fixed z-20 w-full bg-gradient-to-r from-blue-600 to-purple-700 drop shadow-lg overflow-hidden"
             animate={{ height: menu ? 480 : 80 }} // Ajusta la altura dinámica
             transition={{ type: "spring", stiffness: 80 }}
         >
