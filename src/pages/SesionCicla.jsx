@@ -3,6 +3,9 @@ import BarraPagePrincipal from '../Componetes/BarraPagePrincipal'
 import ImgCicla from '../IMG/IMGcicla.png'
 import Qr from '../CompCiclas/Qr'
 import Editar from '../CompCiclas/Editar'
+import Eliminar from '../CompCiclas/Eliminar'
+import { use } from 'react'
+import Agregar from '../CompCiclas/Agregar'
 
 const SesionCicla = () => {
 
@@ -18,13 +21,23 @@ const SesionCicla = () => {
         setEditar(!editarpop);
     };
 
+    const [eliminarpop, setEliminar] = useState(false)
 
+    const toggleEliminar = () => {
+        setEliminar(!eliminarpop);
+    };
 
+    const [agreparpop, setAgrepar] = useState(false)
+    const toggleAregar = () => {
+        setAgrepar(!agreparpop)
+    }
     return (
         <div className='container3 mb-10'>
             <BarraPagePrincipal />
  { qrpop &&  <Qr negacionQR={toggleQr} />}
  {editarpop && <Editar negacionEDITAR={toggleEditar} /> }
+{eliminarpop && <Eliminar negacionELIMINAR={toggleEliminar} /> }
+{agreparpop && <Agregar negacionAgregar={toggleAregar} />}
             <div className='SesionPagePrincipal flex '>
                 {/* Sección 1: Imagen */}
                 <div className="w-[50%] h-[110%] Contenedor2-2 flex flex-col justify-center items-center">
@@ -60,7 +73,7 @@ const SesionCicla = () => {
                                         <div class="bg-inherit rotate-45 p-1 absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2"></div>
                                     </div>
                                 </div>
-                                <div class="group relative ButonSesionCicla rounded-full">
+                                <div onClick={toggleEliminar} class="group relative ButonSesionCicla rounded-full">
                                     <svg className='bg-red-500 cursor-pointer rounded' xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="#ffffff" d="m9.4 16.5l2.6-2.6l2.6 2.6l1.4-1.4l-2.6-2.6L16 9.9l-1.4-1.4l-2.6 2.6l-2.6-2.6L8 9.9l2.6 2.6L8 15.1zM7 21q-.825 0-1.412-.587T5 19V6H4V4h5V3h6v1h5v2h-1v13q0 .825-.587 1.413T17 21z" /></svg>
                                     <div class="bg-zinc-800 p-2 rounded-md group-hover:flex hidden absolute -top-5 -translate-y-full left-1/2 -translate-x-1/2">
                                         <span class=" whitespace-nowrap">Eliminar</span>
@@ -96,7 +109,7 @@ const SesionCicla = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='w-[90%] border-2 ciclaSesion cursor-pointer h-[11vh] rounded-lg flex justify-center gap-2 items-center'>
+                        <div onClick={toggleAregar} className='w-[90%] border-2 ciclaSesion cursor-pointer h-[11vh] rounded-lg flex justify-center gap-2 items-center'>
                             <svg className='p-3' xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 14 14"><g fill="none" stroke="#999999" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 3.19v4.62M3.19 5.5h4.62" /><rect width="10" height="10" x=".5" y=".5" rx="1" /><path d="M3.5 13.5h9a1 1 0 0 0 1-1v-9" /></g></svg>
                             <p className='text-black font-semibold text-xl'>Agregar</p>
                         </div>
